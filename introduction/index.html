@@ -1,33 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Personal Profile Web Page</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #d9dee7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    text-align: center;
+    margin: 10px 0 0;
+  }
+  h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #e3e7ee;
+    padding-bottom: 6px;
+  }
+  p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  .profile-picture {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+  }
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    margin: 0 8px 8px 0;
+  }
+</style>
 </head>
-<body bgcolor="yellow">
-<!-- Picture at the top -->
-<center>
-    <img src="Screenshot 2026-11-06 123018.png" alt="Profile Image" width="400" height="300" border="2">
-</center>
-<h1 align="center">Personal Profile Web page</h1>
-<hr size="2" color="black">
-<h2>About Me</h2>
-<font size="3">I love games, reading manga, manhwa and more. I dont go out so im mostly a introvert but mid but and friendly and really wants to have fun</font>
-<h2>Course</h2>
-<font size="3">IT</font>
-<h2>Education / Achievements</h2>
-<font size="3">Still in progress</font>
-<h2>IT Experience</h2>
-<font size="3">Still gaining experience</font>
-<h2>Hobbies & Interests</h2>
-<font size="3">Games, manga, and more.</font>
-<h2>Goals In Life / Dream</h2>
-<font size="3">My goal is to put my mom in the U.S. and help with the education of my brother and sister and help in the family so we can be rich and be having fun</font>
+<body>
+<div class="container">
 
-<h2>Picture Gallery</h2>
-<p>
-    <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1" width="300" height="225" border="2">
-    <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2" width="300" height="225" border="2">
-</p>
+  <!-- Picture and title -->
+  <div class="card">
+    <img class="profile-picture" src="Screenshot 2026-11-06 123018.png" alt="Profile Image" width="400" height="300">
+    <h1>Personal Profile Web Page</h1>
+  </div>
 
+  <div class="card">
+    <h2>About Me</h2>
+    <p>I love games, reading manga, manhwa and more. I don't go out so I'm mostly an introvert, but friendly and really want to have fun. I am 20 years old and I live in Pasig.</p>
+  </div>
+
+  <div class="card">
+    <h2>Course</h2>
+    <p>IT</p>
+  </div>
+
+  <div class="card">
+    <h2>Education / Achievements</h2>
+    <p>Still in progress</p>
+  </div>
+
+  <div class="card">
+    <h2>IT Experience</h2>
+    <p>Still gaining experience</p>
+  </div>
+
+  <div class="card">
+    <h2>Hobbies &amp; Interests</h2>
+    <p>Games, manga, and more.</p>
+  </div>
+
+  <div class="card">
+    <h2>Goals In Life / Dream</h2>
+    <p>My goal is to bring my mom to the U.S., help with the education of my brother and sister, and help my family so we can be well off and have fun.</p>
+  </div>
+
+  <div class="card">
+    <h2>Picture Gallery</h2>
+    <div class="gallery">
+      <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1" width="300" height="225">
+      <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2" width="300" height="225">
+    </div>
+  </div>
+
+</div>
 </body>
 </html>
