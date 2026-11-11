@@ -135,5 +135,15 @@
  <span class="close" onclick="closePopup()">X</span>
     <img id="popupImage" src="" alt="Popup Image">
 </div>
+ <script>
+    function openPopup(image) {
+      document.getElementById("popupImage").src = image;
+      document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
 </body>
 </html>
