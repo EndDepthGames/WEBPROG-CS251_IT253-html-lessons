@@ -1,134 +1,115 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0284c7;
-  color: #1e293b;
-  line-height: 1.6;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #cfe3f7;
+  color: #222222;
+  margin: 0;
+  padding: 25px 15px;
+  line-height: 1.5;
 }
-
+ 
+/* my container */
 .container {
-  max-width: 850px;
-  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
-}
-
-.card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 30px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
-/* Places Course, Education, and Experience side-by-side in centered columns */
-.column-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+ 
+/* the header */
+.header {
+  background-color: #ffffff;
+  border: 3px solid #2f4b7c;
+  border-radius: 12px;
+  padding: 25px 20px;
   margin-bottom: 20px;
 }
-
-.column-container .card {
-  flex: 1;
-  margin-bottom: 0;
-}
-
-h1 {
-  font-size: 28px;
-  color: #0f172a;
-  margin-top: 15px;
-}
-
-h2 {
-  font-size: 20px;
-  color: #0369a1;
-  margin-bottom: 12px;
-  border-bottom: 2px solid #e0f2fe;
-  padding-bottom: 8px;
-}
-
-p {
-  font-size: 16px;
-  color: #334155;
-}
-
-.profile-header {
-  background: #ffffff;
-}
-
-.profile-pic {
-  width: 220px;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 3px solid #0284c7;
-}
-
-.tagline {
-  color: #64748b;
-  font-weight: 500;
-  margin: 8px 0 15px 0;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #0284c7;
-  color: #ffffff;
-  padding: 10px 24px;
-  font-size: 15px;
-  font-weight: 600;
+ 
+.profile-picture {
+  display: block;
+  margin: 0 auto 15px;
+  max-width: 100%;
+  height: auto;
+  border: 4px solid #2f4b7c;
   border-radius: 8px;
 }
-
-.status {
-  display: inline-block;
-  background-color: #e0f2fe;
-  color: #0369a1;
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 14px;
+ 
+h1 {
+  margin: 10px 0 5px;
+  font-size: 32px;
+  color: #2f4b7c;
 }
-
-.hobby-list {
-  list-style: none;
+ 
+.subtitle {
+  margin: 0;
+  color: #555555;
+  font-style: italic;
+}
+ 
+/* info */
+.info-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 20px;
 }
-
-.hobby-list li {
-  background-color: #f1f5f9;
-  color: #334155;
-  padding: 6px 16px;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 500;
-  border: 1px solid #cbd5e1;
+ 
+.info-tag {
+  background-color: #fff6c9;
+  border: 2px solid #2f4b7c;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 14px;
 }
-
-.goal-card {
-  border-top: 4px solid #0284c7;
+ 
+.label {
+  font-weight: bold;
+  color: #2f4b7c;
 }
-
+ 
+.value {
+  color: #222222;
+}
+ 
+/* my cards */
+.card {
+  background-color: #ffffff;
+  border: 3px solid #2f4b7c;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+ 
+h2 {
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  font-size: 22px;
+  color: #2f4b7c;
+  border-bottom: 3px dashed #f4b942;
+}
+ 
+p {
+  margin: 0;
+}
+ 
+/* the gallary */
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  gap: 15px;
 }
-
+ 
 .gallery img {
-  width: 320px;
+  width: 300px;
   max-width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: auto;
+  border: 3px solid #2f4b7c;
   border-radius: 8px;
-  border: 2px solid #cbd5e1;
+}
+ 
+/* my footer */
+.footer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2f4b7c;
 }
