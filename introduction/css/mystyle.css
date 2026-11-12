@@ -1,9 +1,9 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #eef2f7;
-  color: #333333;
-  line-height: 1.6;
-  padding: 30px 15px;
+  background-color: #f3f1ec;
+  color: #3a3d3b;
+  line-height: 1.65;
+  padding: 35px 15px;
 }
 
 .container {
@@ -12,52 +12,56 @@ body {
 }
 
 .card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 25px;
+  background-color: #fcfbf9;
+  border-radius: 14px;
+  padding: 26px;
   margin-bottom: 20px;
-  border: 1px solid #dce3ec;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e4e0d8;
+  box-shadow: 0 4px 12px rgba(60, 64, 61, 0.04);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 20px rgba(60, 64, 61, 0.08);
 }
 
 h1 {
   font-size: 28px;
-  color: #1e293b;
+  color: #2c3531;
   margin-top: 15px;
 }
 
 h2 {
   font-size: 20px;
-  color: #2563eb;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #eff6ff;
+  color: #4a7c66;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #e8efe9;
   padding-bottom: 6px;
 }
 
 p {
   font-size: 16px;
-  color: #475569;
+  color: #525855;
 }
 
 .profile-header {
   text-align: center;
-  background: linear-gradient(to bottom, #dbeafe, #ffffff 60%);
+  background: linear-gradient(to bottom, #e3ebe6, #fcfbf9 65%);
+}
+
+.img-link {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .profile-pic {
   width: 240px;
   height: 180px;
   object-fit: cover;
-  border-radius: 12px;
-  border: 4px solid #ffffff;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-  cursor: pointer;
+  border-radius: 14px;
+  border: 4px solid #fcfbf9;
+  box-shadow: 0 4px 14px rgba(74, 124, 102, 0.18);
   transition: transform 0.2s ease;
 }
 
@@ -66,32 +70,32 @@ p {
 }
 
 .tagline {
-  color: #64748b;
+  color: #6b736f;
   font-weight: 500;
-  margin: 6px 0 15px 0;
+  margin: 6px 0 16px 0;
 }
 
 .btn {
-  background-color: #2563eb;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #4a7c66;
+  color: #fcfbf9;
+  padding: 10px 22px;
   font-size: 15px;
   font-weight: 600;
   border-radius: 8px;
-  cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .btn:hover {
-  background-color: #1d4ed8;
+  background-color: #3b6552;
 }
 
 .status {
   display: inline-block;
-  background-color: #eff6ff;
-  color: #2563eb;
-  padding: 5px 14px;
+  background-color: #e8efe9;
+  color: #3b6552;
+  padding: 5px 15px;
   border-radius: 20px;
   font-weight: 600;
   font-size: 14px;
@@ -105,23 +109,23 @@ p {
 }
 
 .hobby-list li {
-  background-color: #f1f5f9;
-  color: #334155;
-  padding: 6px 14px;
+  background-color: #efeae1;
+  color: #49453f;
+  padding: 6px 15px;
   border-radius: 8px;
   font-size: 15px;
   font-weight: 500;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e2dcd0;
 }
 
 .goal-card {
-  border-left: 5px solid #2563eb;
-  background-color: #f8fafc;
+  border-left: 5px solid #4a7c66;
+  background-color: #f7f9f7;
 }
 
 .small-note {
   font-size: 13px;
-  color: #64748b;
+  color: #777e7a;
   margin-bottom: 12px;
 }
 
@@ -138,14 +142,13 @@ p {
   height: 240px;
   object-fit: cover;
   border-radius: 10px;
-  border: 2px solid #e2e8f0;
-  cursor: pointer;
+  border: 2px solid #e4e0d8;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .gallery img:hover {
   transform: scale(1.02);
-  border-color: #2563eb;
+  border-color: #4a7c66;
 }
 
 .popup-bg {
@@ -155,22 +158,36 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(35, 40, 38, 0.72);
   justify-content: center;
   align-items: center;
   z-index: 999;
   padding: 20px;
 }
 
+.popup-bg:target {
+  display: flex;
+}
+
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
 .popup-box {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
+  background-color: #fcfbf9;
+  padding: 22px;
+  border-radius: 14px;
   max-width: 650px;
   width: 100%;
   text-align: center;
   position: relative;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
   animation: popIn 0.2s ease;
 }
 
@@ -190,23 +207,23 @@ p {
   margin-bottom: 10px;
 }
 
-#popupCaption {
+.caption {
   font-weight: 600;
-  color: #1e293b;
+  color: #2c3531;
 }
 
 .close-btn {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 16px;
   font-size: 26px;
   font-weight: bold;
-  color: #64748b;
-  cursor: pointer;
+  text-decoration: none;
+  color: #777e7a;
 }
 
 .close-btn:hover {
-  color: #ef4444;
+  color: #b85c5c;
 }
 
 @keyframes popIn {
