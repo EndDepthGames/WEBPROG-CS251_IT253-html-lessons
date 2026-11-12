@@ -97,7 +97,6 @@
     }
 </style>
 </head>
-
 <body>
   <div class="container flex-box">
     <div>Age: 20</div>
@@ -109,58 +108,104 @@
     <div>Student</div>
     <div>Pasig, Metro Manila</div>
   </div>
-  <!-- Picture and title -->
-  <div class="card">
-    <img class="profile-picture" src="Screenshot 2026-11-11 201052.png" alt="Profile Image" width="400" height="300" onclick="openPopup(this.src)">
-    <h1>Personal Profile Web Page</h1>
-  </div>
+  <!--This will be my main profile picture -->
+  <table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
+    <tr>
+      <td align="center">
+        <img src="Screenshot 2026-11-06 123018.png" alt="Profile Image" width="400" height="300" border="2" onclick="openPopup(this.src)">
+        <h1>Personal Profile Web Page</h1>
+      </td>
+    </tr>
+  </table>
 
-  <div class="card">
-    <h2>About Me</h2>
-    <p>I love games, reading manga, manhwa and more. I don't go out so I'm mostly an introvert, but friendly and really want to have fun. I am 20 years old and I live in Pasig.</p>
-  </div>
+  <br>
+  <!--This will be my introduction -->
+  <table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
+    <tr>
+      <td>
+        <h2>About Me</h2>
+        <p>I love games, reading manga, manhwa, and more. I don't go out so I'm mostly an introvert, but friendly and really want to have fun. I am 20 years old and I live in Pasig.</p>
+      </td>
+    </tr>
+  </table>
 
- <div class="two-columns">
+  <br>
+  <!--This will be the course -->
+  <table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
+    <tr>
+      <td>
+        <h2>Course</h2>
+        <p>IT</p>
+      </td>
+    </tr>
+  </table>
 
-  <div class="card">
-    <h2>Course</h2>
-    <p>IT</p>
-  </div>
-   
-  <div class="card">
-    <h2>Education / Achievements</h2>
-    <p>Still in progress</p>
-  </div>
-   
-  <div class="card">
-    <h2>IT Experience</h2>
-    <p>Still gaining experience</p>
-  </div>
-   
-  <div class="card">
-    <h2>Hobbies &amp; Interests</h2>
-    <p>Games, manga, and more.</p>
-  </div>
+  <br>
+  <!--These are the things I did so far in college-->
+  <table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
+    <tr>
+      <td>
+        <h2>Education / Achievements</h2>
+        <p>Still in progress</p>
+      </td>
+    </tr>
+  </table>
 
-  <div class="card">
-    <h2>Goals In Life / Dream</h2>
-    <p>My goal is to bring my mom to the U.S., help with the education of my brother and sister, and help my family so we can be well off and have fun.</p>
-  </div>
+  <br>
+  <!--This will be the course -->
+  <table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
+    <tr>
+      <td>
+        <h2>IT Experience</h2>
+        <p>Still gaining experience</p>
+      </td>
+    </tr>
+  </table>
 
-  <div class="card">
-    <h2>Picture Gallery</h2>
-    <div class="gallery">
-      <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1" width="300" height="225" onclick="openPopup(this.src)">
-      <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2" width="300" height="225" onclick="openPopup(this.src)">
-    </div>
-  </div>
-</div>
-<!--This will be the popup for my pictures -->
-<div class="popup" id="popup">
- <span class="close" onclick="closePopup()">X</span>
+  <br>
+
+  <!--This will be the things I like -->
+  <table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
+    <tr>
+      <td>
+        <h2>Hobbies &amp; Interests</h2>
+        <p>Games, manga, and more.</p>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <!--This will be the goals-->
+  <table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
+    <tr>
+      <td>
+        <h2>Goals In Life / Dream</h2>
+        <p>My goal is to bring my mom to the U.S., help with the education of my brother and sister, and help my family so we can be well off and have fun.</p>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <!--This will be my best picture to put -->
+  <table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
+    <tr>
+      <td>
+        <h2>Picture Gallery</h2>
+        <p>
+          <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1" width="300" height="225" border="2" onclick="openPopup(this.src)">
+          <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2" width="300" height="225" border="2" onclick="openPopup(this.src)">
+        </p>
+      </td>
+    </tr>
+  </table>
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <span class="close" onclick="closePopup()">X</span>
+    <br>
     <img id="popupImage" src="" alt="Popup Image">
-</div>
- <script>
+  </div>
+
+  <script>
     function openPopup(image) {
       document.getElementById("popupImage").src = image;
       document.getElementById("popup").style.display = "block";
@@ -170,5 +215,6 @@
       document.getElementById("popup").style.display = "none";
     }
   </script>
+
 </body>
 </html>
