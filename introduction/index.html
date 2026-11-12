@@ -11,16 +11,19 @@
   <div class="container">
 
     <div class="card profile-header">
-      <img src="Screenshot 2026-11-06 123018.png" alt="Profile Image" class="profile-pic" onclick="openPopup(this)">
+      <a href="#popup-profile" class="img-link">
+        <img src="Screenshot 2026-11-06 123018.png" alt="Profile Image" class="profile-pic">
+      </a>
       <h1>Personal Profile Web Page</h1>
       <p class="tagline">20 years old • IT Student • Pasig</p>
-      <button class="btn" onclick="openGreeting()">Say Hello 👋</button>
+      <a href="#popup-hello" class="btn">Say Hello 👋</a>
     </div>
 
     <div class="card">
       <h2>About Me</h2>
       <p>I love games, reading manga, manhwa, and more. I don't go out so I'm mostly an introvert, but friendly and really want to have fun. I am 20 years old and I live in Pasig.</p>
     </div>
+
     <div class="card">
       <h2>Course</h2>
       <p><strong>IT</strong> (Information Technology)</p>
@@ -55,43 +58,53 @@
       <h2>Picture Gallery</h2>
       <p class="small-note">Click a picture to view it bigger:</p>
       <div class="gallery">
-        <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1" onclick="openPopup(this)">
-        <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2" onclick="openPopup(this)">
+        <a href="#popup-pic1" class="img-link">
+          <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1">
+        </a>
+        <a href="#popup-pic2" class="img-link">
+          <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2">
+        </a>
       </div>
     </div>
 
   </div>
 
-  <div id="imagePopup" class="popup-bg" onclick="closePopups()">
-    <div class="popup-box" onclick="event.stopPropagation()">
-      <span class="close-btn" onclick="closePopups()">&times;</span>
-      <img id="popupImage" src="" alt="Enlarged Photo">
-      <p id="popupCaption"></p>
-    </div>
-  </div>
-
-  <div id="greetingPopup" class="popup-bg" onclick="closePopups()">
-    <div class="popup-box text-popup" onclick="event.stopPropagation()">
-      <span class="close-btn" onclick="closePopups()">&times;</span>
+  <div id="popup-hello" class="popup-bg">
+    <a href="#close" class="popup-backdrop"></a>
+    <div class="popup-box text-popup">
+      <a href="#close" class="close-btn">&times;</a>
       <h2>Hi there! 👋</h2>
       <p>Thanks for checking out my personal profile page! Feel free to recommend any good games, manga, or manhwa.</p>
-      <button class="btn" onclick="closePopups()">Close</button>
+      <a href="#close" class="btn">Close</a>
     </div>
   </div>
 
-  <script>
-    function openPopup(img) {
-      document.getElementById("popupImage").src = img.src;
-      document.getElementById("popupCaption").innerText = img.alt;
-      document.getElementById("imagePopup").style.display = "flex";
-    }
-    function openGreeting() {
-      document.getElementById("greetingPopup").style.display = "flex";
-    }
-    function closePopups() {
-      document.getElementById("imagePopup").style.display = "none";
-      document.getElementById("greetingPopup").style.display = "none";
-    }
-  </script>
+  <div id="popup-profile" class="popup-bg">
+    <a href="#close" class="popup-backdrop"></a>
+    <div class="popup-box">
+      <a href="#close" class="close-btn">&times;</a>
+      <img src="Screenshot 2026-11-06 123018.png" alt="Profile Image">
+      <p class="caption">Profile Image</p>
+    </div>
+  </div>
+
+  <div id="popup-pic1" class="popup-bg">
+    <a href="#close" class="popup-backdrop"></a>
+    <div class="popup-box">
+      <a href="#close" class="close-btn">&times;</a>
+      <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1">
+      <p class="caption">Gallery Picture 1</p>
+    </div>
+  </div>
+
+  <div id="popup-pic2" class="popup-bg">
+    <a href="#close" class="popup-backdrop"></a>
+    <div class="popup-box">
+      <a href="#close" class="close-btn">&times;</a>
+      <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2">
+      <p class="caption">Gallery Picture 2</p>
+    </div>
+  </div>
+
 </body>
 </html>
