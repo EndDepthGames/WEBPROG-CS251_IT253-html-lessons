@@ -4,65 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Profile Web Page</title>
-  <link rel="stylesheet" href="features/css/mystyle.css">
+  <link rel="stylesheet" href="css/mystyle.css">
 </head>
 <body>
-
+ 
   <div class="container">
-
-    <div class="card profile-header">
-      <img src="Screenshot 2026-11-06 123018.png" alt="Profile Image" class="profile-pic">
+ 
+    <!-- Header -->
+    <header class="header">
+      <img class="profile-picture" src="Screenshot 2026-11-11 201052.png" alt="Profile Image" width="400" height="300">
       <h1>Personal Profile Web Page</h1>
-      <p class="tagline">20 years old • IT Student • Pasig</p>
+      <p class="subtitle">Welcome to my page!</p>
+    </header>
+ 
+    <!-- Quick info -->
+    <div class="info-box">
+      <div class="info-tag"><span class="label">Age:</span> <span class="value">20</span></div>
+      <div class="info-tag"><span class="label">Address:</span> <span class="value">Manggahan, Pasig City</span></div>
+      <div class="info-tag"><span class="label">Phone Number:</span> <span class="value">09xxxxxx-xxxx</span></div>
+      <div class="info-tag"><span class="label">Email:</span> <span class="value">holdendmitriv@gmail.com</span></div>
+      <div class="info-tag"><span class="label">Status:</span> <span class="value">Single</span></div>
+      <div class="info-tag"><span class="label">Role:</span> <span class="value">Student</span></div>
+      <div class="info-tag"><span class="label">Location:</span> <span class="value">Pasig, Metro Manila</span></div>
     </div>
-
-    <div class="card">
+ 
+    <!-- About Me -->
+    <section class="card">
       <h2>About Me</h2>
-      <p>I love games, reading manga, manhwa, and more. I don't go out so I'm mostly an introvert, but friendly and really want to have fun. I am 20 years old and I live in Pasig.</p>
-    </div>
-
-    <!-- Centered Columns for Course, Education, and Experience -->
-    <div class="column-container">
-      <div class="card">
-        <h2>Course</h2>
-        <p><strong>IT</strong> (Information Technology)</p>
-      </div>
-
-      <div class="card">
-        <h2>Education / Achievements</h2>
-        <p class="status">Still in progress</p>
-      </div>
-
-      <div class="card">
-        <h2>IT Experience</h2>
-        <p class="status">Still gaining experience</p>
-      </div>
-    </div>
-
-    <div class="card">
+      <p>I love games, reading manga, manhwa, and more. I don't go out so I'm mostly an introvert, but friendly and really want to have fun.</p>
+    </section>
+ 
+    <!-- Course -->
+    <section class="card">
+      <h2>Course</h2>
+      <p>IT</p>
+    </section>
+ 
+    <!-- Education / Achievements -->
+    <section class="card">
+      <h2>Education / Achievements</h2>
+      <p>Still in progress</p>
+    </section>
+ 
+    <!--Experience -->
+    <section class="card">
+      <h2>IT Experience</h2>
+      <p>Still gaining experience</p>
+    </section>
+ 
+    <!-- Hobbies & Interests -->
+    <section class="card">
       <h2>Hobbies &amp; Interests</h2>
-      <ul class="hobby-list">
-        <li>Games</li>
-        <li>Manga</li>
-        <li>Manhwa</li>
-        <li>And more!</li>
-      </ul>
-    </div>
-
-    <div class="card goal-card">
+      <p>Games, manga, and more.</p>
+    </section>
+ 
+    <!-- Goals In Life / Dream -->
+    <section class="card">
       <h2>Goals In Life / Dream</h2>
       <p>My goal is to bring my mom to the U.S., help with the education of my brother and sister, and help my family so we can be well off and have fun.</p>
-    </div>
-
-    <div class="card">
+    </section>
+ 
+    <!-- Picture Gallery -->
+    <section class="card">
       <h2>Picture Gallery</h2>
       <div class="gallery">
         <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1">
         <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2">
       </div>
-    </div>
-
+    </section>
+ 
+    <footer class="footer">
+      <p>Made by a student for a school project.</p>
+    </footer>
+ 
   </div>
-
+ 
 </body>
 </html>
