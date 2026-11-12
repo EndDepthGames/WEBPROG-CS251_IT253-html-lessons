@@ -1,34 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="css/mystyle.css">
-<title>Personal Profile Web Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile Web Page</title>
+  <link rel="stylesheet" href="features/css/mystyle.css">
 </head>
-<body bgcolor="yellow">
-<!-- Picture at the top -->
-<center>
-    <img src="Screenshot 2026-11-06 123018.png" alt="Profile Image" width="400" height="300" border="2">
-</center>
-<h1 align="center">Personal Profile Web page</h1>
-<hr size="2" color="black">
-<h2>About Me</h2>
-<font size="3">I love games, reading manga, manhwa and more. I dont go out so im mostly a introvert but mid but and friendly and really wants to have fun</font>
-<h2>Course</h2>
-<font size="3">IT</font>
-<h2>Education / Achievements</h2>
-<font size="3">Still in progress</font>
-<h2>IT Experience</h2>
-<font size="3">Still gaining experience</font>
-<h2>Hobbies & Interests</h2>
-<font size="3">Games, manga, and more.</font>
-<h2>Goals In Life / Dream</h2>
-<font size="3">My goal is to put my mom in the U.S. and help with the education of my brother and sister and help in the family so we can be rich and be having fun</font>
+<body>
 
-<h2>Picture Gallery</h2>
-<p>
-    <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1" width="300" height="225" border="2">
-    <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2" width="300" height="225" border="2">
-</p>
+  <div class="container">
 
+    <div class="card profile-header">
+      <img src="Screenshot 2026-11-06 123018.png" alt="Profile Image" class="profile-pic" onclick="openPopup(this)">
+      <h1>Personal Profile Web Page</h1>
+      <p class="tagline">20 years old • IT Student • Pasig</p>
+      <button class="btn" onclick="openGreeting()">Say Hello 👋</button>
+    </div>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I love games, reading manga, manhwa, and more. I don't go out so I'm mostly an introvert, but friendly and really want to have fun. I am 20 years old and I live in Pasig.</p>
+    </div>
+    <div class="card">
+      <h2>Course</h2>
+      <p><strong>IT</strong> (Information Technology)</p>
+    </div>
+
+    <div class="card">
+      <h2>Education / Achievements</h2>
+      <p class="status">Still in progress</p>
+    </div>
+
+    <div class="card">
+      <h2>IT Experience</h2>
+      <p class="status">Still gaining experience</p>
+    </div>
+
+    <div class="card">
+      <h2>Hobbies &amp; Interests</h2>
+      <ul class="hobby-list">
+        <li>Games</li>
+        <li>Manga</li>
+        <li>Manhwa</li>
+        <li>And more!</li>
+      </ul>
+    </div>
+
+    <div class="card goal-card">
+      <h2>Goals In Life / Dream</h2>
+      <p>My goal is to bring my mom to the U.S., help with the education of my brother and sister, and help my family so we can be well off and have fun.</p>
+    </div>
+
+    <div class="card">
+      <h2>Picture Gallery</h2>
+      <p class="small-note">Click a picture to view it bigger:</p>
+      <div class="gallery">
+        <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1" onclick="openPopup(this)">
+        <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2" onclick="openPopup(this)">
+      </div>
+    </div>
+
+  </div>
+
+  <div id="imagePopup" class="popup-bg" onclick="closePopups()">
+    <div class="popup-box" onclick="event.stopPropagation()">
+      <span class="close-btn" onclick="closePopups()">&times;</span>
+      <img id="popupImage" src="" alt="Enlarged Photo">
+      <p id="popupCaption"></p>
+    </div>
+  </div>
+
+  <div id="greetingPopup" class="popup-bg" onclick="closePopups()">
+    <div class="popup-box text-popup" onclick="event.stopPropagation()">
+      <span class="close-btn" onclick="closePopups()">&times;</span>
+      <h2>Hi there! 👋</h2>
+      <p>Thanks for checking out my personal profile page! Feel free to recommend any good games, manga, or manhwa.</p>
+      <button class="btn" onclick="closePopups()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function openPopup(img) {
+      document.getElementById("popupImage").src = img.src;
+      document.getElementById("popupCaption").innerText = img.alt;
+      document.getElementById("imagePopup").style.display = "flex";
+    }
+    function openGreeting() {
+      document.getElementById("greetingPopup").style.display = "flex";
+    }
+    function closePopups() {
+      document.getElementById("imagePopup").style.display = "none";
+      document.getElementById("greetingPopup").style.display = "none";
+    }
+  </script>
 </body>
 </html>
