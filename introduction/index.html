@@ -47,6 +47,41 @@
     padding: 20px;
     margin-bottom: 20px;
   }
+  .flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto 25px;
+}
+
+.info-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #ffffff;
+  border: 1px solid #d9dee7;
+  border-radius: 20px;
+  padding: 10px 16px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-tag:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.label {
+  font-weight: bold;
+  color: #555;
+}
+
+.value {
+  color: #222;
+}
    .center-tables {
     max-width: 800px;
     margin: 0 auto;
@@ -106,13 +141,40 @@
 </style>
 </head>
 <div class="container flex-box">
-  <div>Age: 20</div>
-  <div>Address: Manggahan, Pasig City</div>
-  <div>Phone Number: 09xxxxxx-xxxx</div>
-  <div>Email: holdendmitriv@gmail.com</div>
-  <div>Single</div>
-  <div>Student</div>
-  <div>Pasig, Metro Manila</div>
+  <div class="info-tag">
+    <span class="label">Age:</span>
+    <span class="value">20</span>
+  </div>
+
+  <div class="info-tag">
+    <span class="label">Address:</span>
+    <span class="value">Manggahan, Pasig City</span>
+  </div>
+
+  <div class="info-tag">
+    <span class="label">Phone Number:</span>
+    <span class="value">09xxxxxx-xxxx</span>
+  </div>
+
+  <div class="info-tag">
+    <span class="label">Email:</span>
+    <span class="value">holdendmitriv@gmail.com</span>
+  </div>
+
+  <div class="info-tag">
+    <span class="label">Status:</span>
+    <span class="value">Single</span>
+  </div>
+
+  <div class="info-tag">
+    <span class="label">Role:</span>
+    <span class="value">Student</span>
+  </div>
+
+  <div class="info-tag">
+    <span class="label">Location:</span>
+    <span class="value">Pasig, Metro Manila</span>
+  </div>
 </div>
 
 <!-- Centered tables -->
