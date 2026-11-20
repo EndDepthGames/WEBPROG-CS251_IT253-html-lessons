@@ -7,137 +7,73 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body bgcolor="#f2f4f8">
+<body class="bg-light">
 
 <div class="container-fluid mt-3">
   <h1>Responsive Auto Layout Columns</h1>
   <p>In Bootstrap 5, there is an easy way to create equal width columns: just use the <code>.col-md</code> class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width.</p>
   <p>If the screen size is <strong>less than 768px</strong>, the columns will stack horizontally.</p>
+
+  <!-- Row 1: Main Profile & About Me (2 Columns) -->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md bg-primary text-white">1 of 2
-      <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1" width="300" height="225" border="2">
+      <div class="col-md bg-primary text-white p-4 text-center">
+        <img src="Screenshot 2026-11-06 123018.png" alt="Profile Image" class="img-fluid border border-2 border-white mb-3" width="400" height="300">
+        <h1>Personal Profile Web Page</h1>
       </div>
-      <div class="col-md bg-dark text-white">2 of 2
-      <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2" width="300" height="225" border="2">
+      <div class="col-md bg-dark text-white p-4 d-flex flex-column justify-content-center">
+        <h2>About Me</h2>
+        <p>I love games, reading manga, manhwa, and more. I don't go out so I'm mostly an introvert, but friendly and really want to have fun. I am 20 years old and I live in Pasig.</p>
+        <p class="mb-0"><em>"Just having fun exploring everything, but mostly I keep dreaming about it."</em></p>
       </div>
     </div>  
   </div>
   <br>
   
+  <!-- Row 2: Course, Education, IT Experience, Hobbies (4 Columns) -->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md bg-primary text-white">1 of 4
-        
-        Education / Achievements
-        Still working on that
-
+      <div class="col-md bg-primary text-white p-4">
+        <h2>Course</h2>
+        <p>IT</p>
       </div>
-      <div class="col-md bg-dark text-white">2 of 4
-
-        About Me
-        just having fun exploring everything but mostly i keep dreaming about it
-        
+      <div class="col-md bg-dark text-white p-4">
+        <h2>Education / Achievements</h2>
+        <p>Still in progress (Still working on that)</p>
       </div>
-      <div class="col-md bg-primary text-white">3 of 4</div>
-      <div class="col-md bg-dark text-white">4 of 4</div>
+      <div class="col-md bg-primary text-white p-4">
+        <h2>IT Experience</h2>
+        <p>Still gaining experience</p>
+      </div>
+      <div class="col-md bg-dark text-white p-4">
+        <h2>Hobbies &amp; Interests</h2>
+        <p>Games, reading manga, manhwa, and more.</p>
+      </div>
+    </div>  
+  </div>
+  <br>
+
+  <!-- Row 3: Goals & Picture Gallery (2 Columns) -->
+  <div class="container-fluid mb-4">
+    <div class="row">
+      <div class="col-md bg-dark text-white p-4 d-flex flex-column justify-content-center">
+        <h2>Goals In Life / Dream</h2>
+        <p>My goal is to bring my mom to the U.S., help with the education of my brother and sister, and help my family so we can be well off and have fun.</p>
+      </div>
+      <div class="col-md bg-primary text-white p-4">
+        <h2>Picture Gallery</h2>
+        <div class="row g-2 mt-2">
+          <div class="col-6">
+            <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1" class="img-fluid border border-2 border-white" width="300" height="225">
+          </div>
+          <div class="col-6">
+            <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2" class="img-fluid border border-2 border-white" width="300" height="225">
+          </div>
+        </div>
+      </div>
     </div>  
   </div>
 </div>
-
-<!--Fixing the placements of the body -->
-<center>
-<!--This will be my main profile picture  -->
-<table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
-  <tr>
-    <td align="center">
-      <img src="Screenshot 2026-11-06 123018.png" alt="Profile Image" width="400" height="300" border="2">
-      <h1>Personal Profile Web Page</h1>
-    </td>
-  </tr>
-</table>
-
-<br>
-<!--This will be my introduction  -->
-<table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
-  <tr>
-    <td>
-      <h2>About Me</h2>
-      <p>I love games, reading manga, manhwa, and more. I don't go out so I'm mostly an introvert, but friendly and really want to have fun. I am 20 years old and I live in Pasig.</p>
-    </td>
-  </tr>
-</table>
-
-<br>
-<!--This will be the course -->
-<table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
-  <tr>
-    <td>
-      <h2>Course</h2>
-      <p>IT</p>
-    </td>
-  </tr>
-</table>
-
-<br>
-<!--These are the things I did so far in college-->
-<table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
-  <tr>
-    <td>
-      <h2>Education / Achievements</h2>
-      <p>Still in progress</p>
-    </td>
-  </tr>
-</table>
-
-<br>
-<!--This will be the course -->
-<table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
-  <tr>
-    <td>
-      <h2>IT Experience</h2>
-      <p>Still gaining experience</p>
-    </td>
-  </tr>
-</table>
-
-<br>
-<!--This will be the things I like -->
-<table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
-  <tr>
-    <td>
-      <h2>Hobbies &amp; Interests</h2>
-      <p>Games, manga, and more.</p>
-    </td>
-  </tr>
-</table>
-
-<br>
-<!--This will be the goals-->
-<table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
-  <tr>
-    <td>
-      <h2>Goals In Life / Dream</h2>
-      <p>My goal is to bring my mom to the U.S., help with the education of my brother and sister, and help my family so we can be well off and have fun.</p>
-    </td>
-  </tr>
-</table>
-
-<br>
-<!--This will be my best picture to put -->
-<table border="1" cellpadding="15" cellspacing="0" width="800" bgcolor="#ffffff">
-  <tr>
-    <td>
-      <h2>Picture Gallery</h2>
-      <p><!--Adding more pictures that can interact with the user -->
-        <img src="Screenshot 2026-11-06 123217.png" alt="Gallery Picture 1" width="300" height="225" border="2">
-        <img src="Screenshot 2026-11-06 123504.png" alt="Gallery Picture 2" width="300" height="225" border="2">
-      </p>
-    </td>
-  </tr>
-</table>
-
-</center>
 
 </body>
 </html>
